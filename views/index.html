@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Restaurants in Dublin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="js/table.js"></script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Restaurant List in Dublin</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Restaurants in Dublin</h1>
+                <p class="lead">Add or delete a restaurant you already been</p>
+            </div>
+            <div class="row">
+                <div id="menu" class="col-lg-4 mb-5 order-1">
+                    <form enctype="application/json" action="/post/json" method="post">
+                        <div class="form-group">
+                            <select class="form-select" name="sec_n">
+                                <option value="0">Steak House</option>
+                                <option value="1">Sea Food</option>
+                                <option value="2">Spanish Food</option>
+                                <option value="3">Irish Food</option>
+                            </select>
+                            <input class="form-control mt-3" type="text" name="listing" placeholder="Listing">
+                            <input class="form-control mt-3" type="text" name="price" placeholder="Price">
+                            <div class="d-grid gap-2 mt-3">
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-grid gap-2">
+                        <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button>
+                    </div>
+                </div>
+                <div id="results" class="col-lg-8 mb-5 order-2"></div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+ <restaurants_recommendation>
+  <speciality type="Steak House">
+    <info>
+     <listing>FIRE</listing>
+    </info>
+    <info>
+     <listing>SIX</listing>
+    </info>
+    <info vegan="true">
+     <listing>PIKE</listing>
+    </info>
+  </speciality>
+  <speciality type="Sea Food">
+  <info>
+    <listing>SOLE</listing>
+    </info>
+    <info>
+     <listing>The Stage Door</listing>
+    </info>
+    <info vegan="true">
+     <listing>Thomakawk</listing>
+    </info>
+  </speciality>
+  <speciality type="Spanish Food">
+  <info>
+    <listing>Las Tapas de Lola</listing>
+    </info>
+    <info>
+     <listing>Sallamanca</listing>
+    </info>
+    <info vegan="true">
+     <listing>La passion</listing>
+    </info>
+  </speciality>
+  <speciality type="Irish Food">
+  <info>
+    <listing>DIME</listing>
+    </info>
+    <info>
+    <listing>The Quays</listing>
+    </info>
+    <info>
+     <listing>Wellington PUB</listing>
+    </info>
+  </speciality>
+ </restaurants_recommendation>
